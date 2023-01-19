@@ -21,10 +21,20 @@
       <nav class="header-nav">
         <ul>
           <li>Home</li>
-          <li>Live Demo</li>
-          <li>Live Demo Blocks</li>
+          <li class="dropdown">
+            <div class="dropdown">
+              <button class="arrow">Live Demo</button>
+              <div class="dropdown-options">
+                <a href="#">Pets Boarding Services</a>
+                <a href="#">Pets Toys and food Shop</a>
+                <a href="#">Pets Training School</a>
+              </div>
+            </div>
+          </li>
+          <li class="arrow">Live Demo Blocks</li>
           <li><button class="btn header-btn">Buy Now</button></li>
         </ul>
+        <img src="Images/menu.png" alt="Menu logo" />
       </nav>
     </header>
     <main>
@@ -38,23 +48,26 @@
           <span><button class="btn">View All</button> </span>
         </div>
         <div class="image-container">
-          <span class="pet-img">
+          <span class="pet-img img__wrap">
             <img
               src="Images/01.jpg"
               alt="Imagen de un perro mordiendo su juguete"
             />
+            <p class="img__description center-text">Activities</p>
           </span>
-          <span class="pet-img">
+          <span class="pet-img img__wrap">
             <img
               src="Images/02.jpg"
               alt="Imagen de un gato debajo de una manta"
             />
+            <p class="img__description center-text">Activities</p>
           </span>
-          <span class="pet-img">
+          <span class="pet-img img__wrap">
             <img
               src="Images/03.jpg"
               alt="Imagen de un perrito corriendo sobre la grama"
             />
+            <p class="img__description center-text">Activities</p>
           </span>
         </div>
       </section>
