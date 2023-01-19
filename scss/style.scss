@@ -31,6 +31,9 @@ header {
       align-items: center;
       gap: 5rem;
     }
+    img {
+      display: none;
+    }
   }
 }
 
@@ -87,6 +90,7 @@ header {
         color: $orange;
         text-decoration: underline;
         text-underline-offset: 1.3rem;
+        cursor: pointer;
       }
     }
   }
@@ -197,11 +201,11 @@ div.dropdown-options {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(29, 106, 154, 0.72);
+  background: rgba(233, 233, 233, 0.1);
   color: #fff;
   visibility: hidden;
   opacity: 0;
-
+  border-radius: 15%;
   /* transition effect. not necessary */
   transition: opacity 0.2s, visibility 0.2s;
 }
@@ -209,6 +213,7 @@ div.dropdown-options {
 .img__wrap:hover .img__description {
   visibility: visible;
   opacity: 1;
+  cursor: pointer;
 }
 
 .center-text {
@@ -216,3 +221,68 @@ div.dropdown-options {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 850px) {
+  header {
+    nav {
+      ul {
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  header {
+    nav {
+      ul {
+        visibility: hidden;
+      }
+      img {
+        display: inline-block;
+        width: 2rem;
+      }
+      img:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  section.activities-images {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+
+    .info-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline-end: 2rem;
+      padding-inline-start: 2rem;
+      flex-direction: column;
+      div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    div.image-container {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+  }
+  section.activities-images {
+    div.image-container {
+      margin-block-end: 2rem;
+      margin-block-start: 2rem;
+      span.pet-img {
+        width: 70%;
+        height: 100%;
+        margin-block-end: 1rem;
+        margin-block-start: 1rem;
+      }
+    }
+  }
+} ;

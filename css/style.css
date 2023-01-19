@@ -24,6 +24,9 @@ header nav ul {
   align-items: center;
   gap: 5rem;
 }
+header nav img {
+  display: none;
+}
 
 .header-image {
   height: 4rem;
@@ -76,6 +79,7 @@ header nav ul li:hover {
   color: rgb(255, 140, 0);
   text-decoration: underline;
   text-underline-offset: 1.3rem;
+  cursor: pointer;
 }
 
 .text-orange {
@@ -183,10 +187,11 @@ div.dropdown-options a {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(29, 106, 154, 0.72);
+  background: rgba(233, 233, 233, 0.1);
   color: #fff;
   visibility: hidden;
   opacity: 0;
+  border-radius: 15%;
   /* transition effect. not necessary */
   transition: opacity 0.2s, visibility 0.2s;
 }
@@ -194,12 +199,66 @@ div.dropdown-options a {
 .img__wrap:hover .img__description {
   visibility: visible;
   opacity: 1;
+  cursor: pointer;
 }
 
 .center-text {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 850px) {
+  header nav ul {
+    gap: 2rem;
+  }
+}
+@media (max-width: 680px) {
+  header nav ul {
+    visibility: hidden;
+  }
+  header nav img {
+    display: inline-block;
+    width: 2rem;
+  }
+  header nav img:hover {
+    cursor: pointer;
+  }
+  section.activities-images {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+  }
+  section.activities-images .info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-end: 2rem;
+    padding-inline-start: 2rem;
+    flex-direction: column;
+  }
+  section.activities-images .info-container div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.activities-images div.image-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  section.activities-images div.image-container {
+    margin-block-end: 2rem;
+    margin-block-start: 2rem;
+  }
+  section.activities-images div.image-container span.pet-img {
+    width: 70%;
+    height: 100%;
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
