@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif, Arial;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline-end: 2rem;
+  padding-inline-start: 2rem;
+  box-shadow: 0px 1px 5px rgba(95, 95, 95, 0.482);
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+}
+
+.header-image {
+  height: 4rem;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+section.activities-images {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section.activities-images div.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline-end: 2rem;
+  padding-inline-start: 2rem;
+}
+section.activities-images div.info-container {
+  margin-block-start: 4rem;
+}
+section.activities-images div.image-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 350px;
+}
+section.activities-images div.image-container span.pet-img {
+  width: 30%;
+  height: inherit;
+}
+section.activities-images div.image-container span.pet-img img {
+  width: 100%;
+  height: inherit;
+  border-radius: 15%;
+}
+
+/*# sourceMappingURL=style.css.map */
