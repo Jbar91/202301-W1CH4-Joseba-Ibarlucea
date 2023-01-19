@@ -15,7 +15,8 @@
 }
 
 $shadow-effect: rgba(95, 95, 95, 0.482);
-
+$orange: rgb(255, 140, 0);
+$border-btn: 1rem;
 body {
   font-family: "Nunito", sans-serif, Arial;
 }
@@ -27,6 +28,7 @@ header {
     ul {
       list-style: none;
       display: flex;
+      align-items: center;
       gap: 5rem;
     }
   }
@@ -39,6 +41,12 @@ header {
 .header-nav {
   display: flex;
   justify-content: space-around;
+
+  ul {
+    li {
+      font-weight: 800;
+    }
+  }
 }
 
 section.activities-images {
@@ -66,4 +74,54 @@ section.activities-images {
       }
     }
   }
+}
+
+header {
+  nav {
+    ul {
+      li:hover {
+        color: $orange;
+        text-decoration: underline;
+        text-underline-offset: 1.3rem;
+      }
+    }
+  }
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.text-big {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.btn {
+  border-bottom-left-radius: $border-btn;
+  border-top-right-radius: $border-btn;
+  border-bottom-right-radius: $border-btn;
+  padding: 0.7rem;
+  color: white;
+  background-color: $orange;
+  border: 2px solid $orange;
+  font-family: "Nunito";
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid $orange;
+  color: $orange;
+}
+
+.header-btn {
+  border: 2px solid $orange;
+  color: black;
+  background-color: transparent;
+}
+.header-btn:hover {
+  color: white;
+  background-color: $orange;
+  border: 2px solid $orange;
 }

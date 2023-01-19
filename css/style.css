@@ -20,6 +20,7 @@ header {
 header nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 5rem;
 }
 
@@ -30,6 +31,9 @@ header nav ul {
 .header-nav {
   display: flex;
   justify-content: space-around;
+}
+.header-nav ul li {
+  font-weight: 800;
 }
 
 section.activities-images {
@@ -61,6 +65,52 @@ section.activities-images div.image-container span.pet-img img {
   width: 100%;
   height: inherit;
   border-radius: 15%;
+}
+
+header nav ul li:hover {
+  color: rgb(255, 140, 0);
+  text-decoration: underline;
+  text-underline-offset: 1.3rem;
+}
+
+.text-orange {
+  color: rgb(255, 140, 0);
+}
+
+.text-big {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.btn {
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 0.7rem;
+  color: white;
+  background-color: rgb(255, 140, 0);
+  border: 2px solid rgb(255, 140, 0);
+  font-family: "Nunito";
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid rgb(255, 140, 0);
+  color: rgb(255, 140, 0);
+}
+
+.header-btn {
+  border: 2px solid rgb(255, 140, 0);
+  color: black;
+  background-color: transparent;
+}
+
+.header-btn:hover {
+  color: white;
+  background-color: rgb(255, 140, 0);
+  border: 2px solid rgb(255, 140, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
