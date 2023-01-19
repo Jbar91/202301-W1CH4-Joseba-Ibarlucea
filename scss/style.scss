@@ -46,6 +46,10 @@ header {
     li {
       font-weight: 800;
     }
+    button {
+      font-weight: 800;
+      font-size: 1rem;
+    }
   }
 }
 
@@ -124,4 +128,91 @@ header {
   color: white;
   background-color: $orange;
   border: 2px solid $orange;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+button {
+  font-family: "Nunito";
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button:hover {
+  color: $orange;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.dropdown-options a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+  width: 13rem;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.dropdown-options a:hover {
+  color: $orange;
+}
+
+div.dropdown-options {
+  a {
+    margin: 0;
+  }
+}
+
+.arrow:after {
+  content: "\25be ";
+}
+
+.img__wrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
